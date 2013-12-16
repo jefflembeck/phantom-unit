@@ -7,14 +7,24 @@ Install the module with: `npm install phantom-unit`
 
 ```javascript
 var phantom_unit = require('phantom-unit');
-phantom_unit.awesome(); // "awesome"
+phantom_unit.test( "filepath" );
 ```
 
 ## Documentation
-_(Coming soon)_
+phantom-unit is a wrapper around a phantomjs script that borrows syntax from [node-unit](https://github.com/caolan/nodeunit) so you can write tests that work in the phantom runtime.
+
+Current Functionality:
+
+* test.ok( value, message )
+* test.equal( actual, expected, message )
+* test.notEqual( actual, expected, message )
+* test.throws( codeblock, Error Expected, message )
+* test.doesNotThrow( codeblock, message )
+
 
 ## Examples
-_(Coming soon)_
+For an example, look [at this test](https://github.com/jlembeck/phantom-unit/blob/master/test/files/test.js)
+
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [Grunt](http://gruntjs.com/).
