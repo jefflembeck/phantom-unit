@@ -25,6 +25,12 @@
       test.throws(function(){
         self.throwsError();
       }, new Error( "Thrown" ) , "Should throw an error" );
+    },
+    'doesNotThrow': function( test ){
+      var self = this.lib;
+      test.doesNotThrow(function(){
+        self.doesntThrow();
+      }, "Doesn't throw", "Should not throw an error" );
     }
 
   };

@@ -13,5 +13,8 @@
     throw new Error( "Thrown" );
   };
 
+  Foo.prototype.doesntThrow = function(){
+  };
+
   module.exports = Foo;
 }(typeof exports === 'object' && exports || this));
