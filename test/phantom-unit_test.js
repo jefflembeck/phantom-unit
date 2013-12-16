@@ -24,19 +24,6 @@
       test.ifError(value)
   */
 
-  exports.awesome = {
-    setUp: function(done) {
-      // setup here
-      done();
-    },
-    'no args': function(test) {
-      test.expect(1);
-      // tests here
-      test.equal(phantom_unit.awesome(), 'awesome', 'should be awesome.');
-      test.done();
-    }
-  };
-
   exports.test = {
     setUp: function(done) {
       // setup here

@@ -19,6 +19,12 @@
       test.ok( !this.lib._bar, "Should not be set yet" );
       this.lib.bar();
       test.ok( this.lib._bar, "Should now be set" );
+    },
+    'throws': function( test ){
+      var self = this.lib;
+      test.throws(function(){
+        self.throwsError();
+      }, new Error( "Thrown" ) , "Should throw an error" );
     }
 
   };
