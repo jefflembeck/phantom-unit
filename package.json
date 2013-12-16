@@ -1,0 +1,41 @@
+{
+  "name": "phantom-unit",
+  "description": "Test Scripts Written in PhantomJS",
+  "version": "0.1.0",
+  "homepage": "https://github.com/jlembeck/phantom-unit",
+  "author": {
+    "name": "Jeffrey Lembeck",
+    "email": "jlembeck@gmail.com",
+    "url": "http://www.jefflembeck.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jlembeck/phantom-unit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jlembeck/phantom-unit/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jlembeck/phantom-unit/blob/master/LICENSE-MIT"
+    }
+  ],
+  "main": "lib/phantom-unit",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "dependencies": {
+    "phantomjs": "1.9.2-5"
+  },
+  "devDependencies": {
+    "grunt-contrib-jshint": "~0.1.1",
+    "grunt-contrib-nodeunit": "~0.1.2",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt": "~0.4.2"
+  },
+  "keywords": []
+}
